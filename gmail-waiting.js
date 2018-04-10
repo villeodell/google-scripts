@@ -3,11 +3,18 @@
  * were the last respondent. It applies a nice label to them, so you can
  * see them in Priority Inbox or do something else.
  *
- * To remove and ignore an email thread, just archive it (kb shortcut 'e') and remove @Waiting label
+ * Works nicely with an @Action, @Later, @Read, @Waiting or similar email workflow
  *
- * This is most effective when paired with a time-based script trigger.
+ * To remove an email thread from @Waiting and cause it to be ignored on future script runs: 
+ *   - archive it (kb shortcut 'e')
+ *   - remove @Waiting label
  *
- * For installation instructions, read this blog post:
+ * 1. Create a new Google Apps Script in Google Drive or by visiting script.google.com
+ * 2. Replace the default contents with this file, save and run to test
+ * 3. Authorize script to access Gmail if prompted
+ * 4. Add a time-based script trigger to run 'main' function daily or according to the schedule you'd like
+ *
+ * For more installation instructions, read this blog post:
  * http://jonathan-kim.com/2013/Gmail-No-Response/
  */
 
